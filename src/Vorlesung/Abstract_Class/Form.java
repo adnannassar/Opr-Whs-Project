@@ -4,6 +4,7 @@ public abstract class Form {
     private String name;
     private String color;
 
+
     public Form(String name, String color) {
         this.name = name;
         this.color = color;
