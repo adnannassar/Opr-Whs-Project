@@ -2,14 +2,19 @@ package Klausur_08_02_2021;
 
 public class Aufgabe_001 {
     public static void main(String[] args) {
-        Rechtecke rechtecke = new Rechtecke(10, 20);
-        System.out.println(rechtecke.gibText());
+        Rechtecke r1 = new Rechtecke(10, 20);
+        Rechtecke r2 = new Rechtecke(2, 4);
+        System.out.println(r1.gibText());
+        System.out.println(r1.istGroesser(r2));
+
     }
 
     static abstract class Zeichenobjekt {
         public abstract String gibText();
 
-        public abstract boolean istGroesser(Zeichenobjekt zeichenobjekt);
+        public boolean istGroesser(Zeichenobjekt zeichenobjekt){
+            return this.fläche() > zeichenobjekt.fläche();
+        }
 
         public abstract double fläche();
 

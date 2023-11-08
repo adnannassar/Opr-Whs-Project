@@ -1,6 +1,6 @@
 package Klausur_26_09_2022;
 
-public class Aufgabe_001 {
+public abstract class Aufgabe_001 {
 
     public static void main(String[] args) {
         Rechtecke rechtecke = new Rechtecke(10, 20);
@@ -8,7 +8,14 @@ public class Aufgabe_001 {
     }
 
     static abstract class Zeichenobjekt {
-        public abstract String gibText();
+        public String gibText() {
+            return "F=<" + fläche() + ">, U=<" + umfang() + ">";
+        }
+
+        public abstract double fläche();
+
+        public abstract double umfang();
+
     }
 
     static class Rechtecke extends Zeichenobjekt {
@@ -21,19 +28,14 @@ public class Aufgabe_001 {
         }
 
         @Override
-        public final String gibText() {
-            return "F=<" + fläche() + ">, U=<" + umfang() + ">";
+        public double fläche() {
+            return breite * länge;
         }
 
-        private double fläche() {
-            return this.breite * this.länge;
+        @Override
+        public double umfang() {
+            return 2 * (breite + länge);
         }
-
-        private double umfang() {
-            return 2 * (this.breite + this.länge);
-        }
-
-
     }
 
 
