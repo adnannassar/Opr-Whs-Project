@@ -12,9 +12,7 @@ public class Aufgabe_003 {
         beträge.add(new Geldbetrag("EUR", 3));
         beträge.add(new Geldbetrag("DO", 100));
         beträge.add(new Geldbetrag("DO", 50));
-
         System.out.println(summiere(beträge));
-
     }
 
     public static TreeMap<String, Double> summiere(Collection<Geldbetrag> betraege) {
