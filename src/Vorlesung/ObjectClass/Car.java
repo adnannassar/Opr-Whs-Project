@@ -40,12 +40,8 @@ public class Car {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || this.getClass() != o.getClass()) return false;
-        Car c = (Car) o;
-        if (this.topSpeed == c.topSpeed && name.equals(c.name)) {
-            return true;
-        } else {
-            return false;
-        }
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return topSpeed == car.topSpeed && Objects.equals(name, car.name);
     }
 }
