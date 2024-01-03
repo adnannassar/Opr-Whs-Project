@@ -1,5 +1,7 @@
 package Vorlesung.StreamsAPI;
 
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.stream.Stream;
 
 public class Example {
