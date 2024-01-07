@@ -1,0 +1,7 @@
+@Erdbeertörtchen 123 aHa
+Hallo From Java
+@Test AHA
+@ABC   ah
+@test
+@CDE AhA
+@CDE AHa

@@ -1,0 +1,19 @@
+package Klausur_08_02_2021;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Aufgabe_011 {
+    public static void main(String[] args) {
+
+        try {
+            BufferedReader r = new BufferedReader(new FileReader("IO_FilesAndFolders/Vorlesungen.txt"));
+            List<Integer> l = new ArrayList<>();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
