@@ -16,9 +16,7 @@ public class Aufgabe_010 {
                 tokenizer.nextToken();
             }
         });
-
         assertNotNull(e);
-
     }
 
     @Test
