@@ -1,0 +1,11 @@
+Folgende Methode war gegeben:
+public void berechne(new File("C:/Temp/Programm"));
+1. Warum ist es nicht sinnvoll einen J-Unit Test für diese Methode zu schreiben?
+2. Wie kann man die Methode so umbauen, dass sie mit Junit sinnvoll getestet werden kann?
+
+Antwort:
+1. Abhängigkeit vom Dateisystem: Die Methode ist abhängig vom Zustand des Dateisystems,
+was bedeutet, dass der Test fehlschlagen kann, wenn die Datei nicht vorhanden ist,
+
+2. Parameterisierung: Statt einen festen Dateipfad zu verwenden, sollte die Methode einen File-Objekt
+als Parameter akzeptieren. wie z.B: public void berechne(File file)

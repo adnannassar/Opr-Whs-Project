@@ -9,7 +9,7 @@ public class PartationBy {
     public static void main(String[] args) {
      Map<Boolean, List<String>> map =
              Stream
-                .of("Shaker", "Amani","Zainab", "Nesrin", "Israa", "Omar", "Abdou", "Mariam")
+                .of("Shaker", "Amani","Zainab", "Nesrin", "Klausur_Extra", "Omar", "Abdou", "Mariam")
                 .collect(Collectors.partitioningBy( name -> name.length() % 2 == 0));
      System.out.println(map);
     }

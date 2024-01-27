@@ -9,7 +9,7 @@ public class CollectToMap {
     public static void main(String[] args) {
       Map<String, Integer> map =
               Stream
-                .of("Shaker", "Amani","Zainab", "Nesrin", "Israa", "Omar", "Abdou", "Mariam", "A", "AB")
+                .of("Shaker", "Amani","Zainab", "Nesrin", "Klausur_Extra", "Omar", "Abdou", "Mariam", "A", "AB")
                 .map(String::toUpperCase)
                 .collect(Collectors.toMap(Function.identity() , String::length));
         System.out.println(map);

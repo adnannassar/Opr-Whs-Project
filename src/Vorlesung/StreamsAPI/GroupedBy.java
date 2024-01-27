@@ -9,7 +9,7 @@ public class GroupedBy {
     public static void main(String[] args) {
      Map<Integer, List<String>> map =
              Stream
-                .of("Shaker", "Amani","Zainab", "Nesrin", "Israa", "Omar", "Abdou", "Mariam")
+                .of("Shaker", "Amani","Zainab", "Nesrin", "Klausur_Extra", "Omar", "Abdou", "Mariam")
                 .collect(Collectors.groupingBy( name -> name.length()));
      System.out.println(map);
     }
